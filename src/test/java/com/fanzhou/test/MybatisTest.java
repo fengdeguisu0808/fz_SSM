@@ -17,6 +17,7 @@ import java.util.List;
  */
 public class MybatisTest {
     public static void main(String[] args) throws IOException {
+        //读取配置文件
         InputStream resourceAsStream = Resources.getResourceAsStream("SqlMapConfig.xml");
         SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
         SqlSessionFactory sessionFactory = builder.build(resourceAsStream);
