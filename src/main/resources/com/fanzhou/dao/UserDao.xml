@@ -6,4 +6,8 @@
     <select id="findAll" resultType="com.fanzhou.domain.User">
         select * from user;
     </select>
+
+    <insert id="addUser" parameterType="com.fanzhou.domain.User">
+        insert into user(id,username,birthday,sex,address) values(null,#{username},#{birthday},#{sex},#{address});
+    </insert>
 </mapper>

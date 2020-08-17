@@ -14,4 +14,6 @@ public interface UserDao {
      * @return
      */
     List<User> findAll();
+
+    void addUser(User user);
 }
